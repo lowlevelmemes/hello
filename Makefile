@@ -16,4 +16,4 @@ clean:
 
 install:
 	install -d $(DESTDIR)$(PREFIX)/bin
-	install -s hello $(DESTDIR)$(PREFIX)/bin/
+	install hello $(DESTDIR)$(PREFIX)/bin/
