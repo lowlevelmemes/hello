@@ -1,6 +1,6 @@
 CC = cc
 CFLAGS = -O3 -Wall -Wextra
-PREFIX = /usr/local
+PREFIX = 
 DESTDIR =
 C_FILES = hello.c
 OBJ = $(C_FILES:.c=.o)
