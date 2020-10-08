@@ -1,6 +1,7 @@
-CC = i686-echidnaos-gcc
+CC = cc
 CFLAGS = -O3 -Wall -Wextra
-PREFIX = 
+PREFIX = /usr/local
+DESTDIR =
 C_FILES = hello.c
 OBJ = $(C_FILES:.c=.o)
 
@@ -14,5 +15,5 @@ clean:
 	rm -f $(OBJ) hello
 
 install:
-	mkdir -p $(PREFIX)/bin
-	cp hello $(PREFIX)/bin/
+	install -d $(DESTDIR)$(PREFIX)/bin
+	install -s hello $(DESTDIR)$(PREFIX)/bin/
